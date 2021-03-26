@@ -18,5 +18,18 @@ public class testMavenTdd3
        {
            System.out.println(false);
        }
+       
+       
+       String c = new String("Khan");
+       String d = new String("Khan");
+       
+       if(c.equals(d))
+       {
+           System.out.println(true);
+       }
+       else
+       {
+           System.out.println(false);
+       }
    }
 }
