@@ -5,31 +5,33 @@ package za.ca.cput.testmaven3;
  */
 public class testMavenTdd3 
 {
-     public static void main(String[]args)
+
+   static int add(int i, int i0)
    {
-       String a = new String ("taariq");
-       String b = new String ("taariq");
-       
-       if(a==b) //(a==b) returns the object(e.g which is diffrent in this case and returns false), (a.equals(b))checks object string use(e.g which is the same and returns true)
-       {
-            System.out.println(true);
-       }
-       else
-       {
-           System.out.println(false);
-       }
-       
-       
-       String c = new String("Khan");
-       String d = new String("Khan");
-       
-       if(c.equals(d))
-       {
-           System.out.println(true);
-       }
-       else
-       {
-           System.out.println(false);
-       }
+       return 0;
    }
+   private String Taariq;
+   private String Khan;
+   
+   public String getTaariq()
+   {
+       return Taariq;
+   }
+   public void setTaariq(String Taariq)
+   {
+       Taariq = Taariq;
+   }
+   public String getKhan()
+   {
+       return Khan;
+   }
+   public void setKhan(String Khan)
+   {
+       Khan = Khan;
+   }
+    @Override
+    public String toString()
+    {
+        return "testMavenTdd3{" + "Taariq='" + Taariq + '\'' + ", Khan='" +Khan+ '\''+'}';
+    }
 }
