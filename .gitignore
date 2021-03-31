@@ -1,4 +1,5 @@
 #Filles and folders to be gnored by GIT.
+
 #Netbeans specific folders and files
 /nbproject/
 build.xml

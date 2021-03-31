@@ -3,8 +3,12 @@ package za.ca.cput.testmaven3;
  *
  * @author Taariq
  */
-public class testMavenTdd3 
+public class testMavenTdd3
 {
+    /**
+     * 
+     * @param args 
+     */
      public static void main(String[]args)
    {
        String a = new String ("taariq");
