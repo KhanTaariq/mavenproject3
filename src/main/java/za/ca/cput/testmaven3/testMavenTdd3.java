@@ -1,7 +1,8 @@
 package za.ca.cput.testmaven3;
-/**
- *
- * @author Taariq
+/**@File Descriptor: testMavenRdd3
+ * @Program Descriptor: This is my first Maven Project for Github 
+ * @author: Tumelo Mzaca
+ * @Date Created *
  */
 public class testMavenTdd3 
 {
