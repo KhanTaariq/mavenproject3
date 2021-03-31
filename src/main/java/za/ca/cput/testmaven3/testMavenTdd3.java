@@ -1,8 +1,8 @@
 package za.ca.cput.testmaven3;
-/**@File Descriptor: testMavenRdd3
+/**@File Descriptor: playgroundfortee
  * @Program Descriptor: This is my first Maven Project for Github 
  * @author: Tumelo Mzaca
- * @Date Created *
+ * @Date Created ***
  */
 public class testMavenTdd3 
 {
@@ -21,8 +21,8 @@ public class testMavenTdd3
        }
        
        
-       String c = new String("Khan");
-       String d = new String("Khan");
+       String c = new String("Mzaca"); //Changed the string name from Khan to Mzaca
+       String d = new String("Mzaca");
        
        if(c.equals(d))
        {
