@@ -45,14 +45,14 @@ public class StudentTest {
     
     @Test
     public void testIdentity(){
-        assertSame(firstStudent, learner3);
+        assertSame(firstStudent, thirdStudent);
         assertSame(secondStudent, fourthStudent);
     }
     
     //Tests Equality
     @Test
     public void testEquality(){
-        assertEquals(firstStudent, learner3);
+        assertEquals(firstStudent, thirdStudent);
         assertEquals(secondStudent, fourthStudent);
     }
     
