@@ -6,7 +6,7 @@ package za.ca.cput.testmaven3;
 public class testMavenTdd3
 {
     /**
-     * 
+     * Changes made
      * @param args 
      */
      public static void main(String[]args)
