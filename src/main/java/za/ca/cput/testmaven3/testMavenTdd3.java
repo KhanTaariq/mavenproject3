@@ -35,6 +35,6 @@ public class testMavenTdd3
     @Override
     public String toString()
     {
-        return "testMavenTdd3{" + "Tumelo='" + Tumelo + '\'' + ", Mzaca='" +Mzaca+ '\''+'}';
+        return "testMavenTdd3{" + "Tumelo='" + Tumelo + '\'' + ", Mzaca='" + Mzaca + '\''+'}';
     }
 }
