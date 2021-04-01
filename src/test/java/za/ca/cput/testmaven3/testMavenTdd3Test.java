@@ -7,7 +7,7 @@ package za.ca.cput.testmaven3;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAfter;
 import org.junit.jupiter.api.Timeout;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -21,33 +21,33 @@ public class testMavenTdd3Test {
     private testMavenTdd3 test1;
     private testMavenTdd3 test2;
     
-    @BeforeEach
+    @BeforeAfter
   public void setUp()
     {
         test1 = new testMavenTdd3();
         test2 = new testMavenTdd3();
     }
     
-    @Test
+    @Test //Calling the method to be tested
     public void testEquality()
     {
-        assertTrue(test1.equals(test1));
+        assertTrue(test1.equals(test1)); //Verify 
     }
    
-    @Test
-    public void testIdentity()
+    @Test //Calling the method to be tested
+    public void testIdentity() 
     {
-        assertSame(test1, test1);
+        assertSame(test1, test1); //Verify (test for identity)
     }
     
-    @Test
+    @Test //Calling the method to be tested
     public void testFailingTest()
     {
-        assertNotSame(tes1, test2);
+        assertNotSame(tes1, test2); //Verify
         fail("Failed test deliberately");
     }    
   
-    @Test
+    @Test //Calling the method to be tested
     @Timeout(5)
     public void testTimeOut()throws InterruptedException
     {
@@ -55,12 +55,12 @@ public class testMavenTdd3Test {
         System.out.println("Passed With In Time");
     }
     
-    @Test
+    @Test //Calling the method to be tested
     @Disabled
     public void testDisablingTest()
     {
         int actualResult = testMavenTdd3.add(1, 2);
-        assertEquals(3, actualResult);
+        assertEquals(3, actualResult); //Verify
     }
     
 }
