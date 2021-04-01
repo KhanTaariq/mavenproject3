@@ -5,6 +5,9 @@
 build.xml
 manifest.mf
 
+
+/target/
+=======
 =======
 #Files and folders to be ignored by GIT.
 
@@ -18,4 +21,5 @@ manifest.mf
 
 =======
 /target/
+
 

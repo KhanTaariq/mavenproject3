@@ -1,4 +1,6 @@
 
+=======
+
 package za.ca.cput.testmaven3;
 
 import org.junit.jupiter.api.AfterAll;
@@ -66,6 +68,7 @@ public class testMavenTdd3Test {
 
    
 =======
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -73,6 +76,62 @@ public class testMavenTdd3Test {
  */
 package za.ca.cput.testmaven3;
 
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * @Author: Sibusiso Makaula 217101887
+ */
+public class testMavenTdd3Test {
+
+    public testMavenTdd3Test() {
+    }
+    private testMavenTdd3 test1;
+    private testMavenTdd3 test2;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        test1 = new testMavenTdd3();
+        test2 = new testMavenTdd3();
+    }
+
+    @Test
+    public void testEquality() {
+        assertEquals(test2,test2);
+    }
+
+    @Test
+    public void testIdentity() {
+        assertSame(test1,test2);
+    }
+
+    @Test
+    public void testFailing() {
+        assertSame(test1, test1);
+        fail("failed test deliberatetly");
+    }
+
+    @Test
+    @Timeout(100)
+    public void testTimeOut() throws Exception {
+        Thread.sleep(100);
+        System.out.println("test passed with in the time");
+
+    }
+
+    @Test
+    @Disabled("disable")
+    public void testDisabled() {
+        assertEquals(3, 1 + 2);
+    }
+    public boolean setDfailINoTest(){
+        return false;
+    }
+=======
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.BeforeEach;
@@ -131,5 +190,6 @@ public class testMavenTdd3Test {
         assertEquals(3, actualResult); //Verify
     }
     
+
 
 }
