@@ -43,7 +43,7 @@ public class testMavenTdd3Test {
     @Test //Calling the method to be tested
     public void testFailingTest()
     {
-        assertNotSame(tes1, test2); //Verify
+        assertNotSame(test1, test2); //Verify
         fail("Failed test deliberately");
     }    
   
