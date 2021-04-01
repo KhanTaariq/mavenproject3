@@ -40,29 +40,23 @@ public class testMavenTdd3Test {
     public void tearDown() {
     }
 
-    /**
-     * Test of main method, of class testMavenTdd3.
-     */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        testMavenTdd3.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
     public void testObjectEquality(){
         
     }
+    @Test
     public void testObjectIdentity(){
         
     }
+    @Test
     public void testFailingTest(){
         
     }
+    @Test
     public void testTimeouts(){
         
     }
+    @Test
     public void testDisablingTest(){
         
     }
