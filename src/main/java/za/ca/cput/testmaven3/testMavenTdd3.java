@@ -6,31 +6,35 @@ package za.ca.cput.testmaven3;
  */
 public class testMavenTdd3 
 {
-     public static void main(String[]args)
+       static int add(int a, int b)
    {
-       String a = new String ("tumelo"); //Changed the string name from Taariq to Tumelo
-       String b = new String ("tumelo");
-       
-       if(a==b) //(a==b) returns the object(e.g which is diffrent in this case and returns false), (a.equals(b))checks object string use(e.g which is the same and returns true)
-       {
-            System.out.println(true);
-       }
-       else
-       {
-           System.out.println(false);
-       }
-       
-       
-       String c = new String("Mzaca"); //Changed the string name from Khan to Mzaca
-       String d = new String("Mzaca");
-       
-       if(c.equals(d))
-       {
-           System.out.println(true);
-       }
-       else
-       {
-           System.out.println(false);
-       }
+       return 0;
    }
+       //Declare Variables
+   private String Tumelo; //Changed the strings names
+   private String Mzaca;
+   
+       //Getters and Setters
+   public String getTumelo()
+   {
+       return Tumelo;
+   }
+   public void setTumelo(String Tumelo)
+   {
+       Tumelo = Tumelo;
+   }
+   public String getMzaca()
+   {
+       return Mzaca;
+   }
+   public void setMzaca(String Mzaca)
+   {
+       Mzaca = Mzaca;
+   }
+      //Override print report method and display output
+    @Override
+    public String toString()
+    {
+        return "testMavenTdd3{" + "Tumelo='" + Tumelo + '\'' + ", Mzaca='" +Mzaca+ '\''+'}';
+    }
 }
