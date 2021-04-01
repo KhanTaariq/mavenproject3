@@ -7,7 +7,7 @@ package za.ca.cput.testmaven3;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.BeforeAfter;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Timeout;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -21,7 +21,7 @@ public class testMavenTdd3Test {
     private testMavenTdd3 test1;
     private testMavenTdd3 test2;
     
-    @BeforeAfter
+    @BeforeEach
   public void setUp()
     {
         test1 = new testMavenTdd3();
@@ -43,7 +43,7 @@ public class testMavenTdd3Test {
     @Test //Calling the method to be tested
     public void testFailingTest()
     {
-        assertNotSame(tes1, test2); //Verify
+        assertNotSame(test1, test2); //Verify
         fail("Failed test deliberately");
     }    
   
