@@ -13,10 +13,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- *
- * @author Owner
+ * testMavenTdd3Test.java
+ * @author Nkukwana Siphamandla 217046177
+ * Due date: 01 April 2021
  */
 public class testMavenTdd3Test {
+    private testMavenTdd3 tMaventdd3;
     
     public testMavenTdd3Test() {
     }
@@ -31,6 +33,7 @@ public class testMavenTdd3Test {
     
     @BeforeEach
     public void setUp() {
+        this.tMaventdd3 = new testMavenTdd3();
     }
     
     @AfterEach
@@ -48,5 +51,19 @@ public class testMavenTdd3Test {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+    public void testObjectEquality(){
+        
+    }
+    public void testObjectIdentity(){
+        
+    }
+    public void testFailingTest(){
+        
+    }
+    public void testTimeouts(){
+        
+    }
+    public void testDisablingTest(){
+        
+    }
 }
