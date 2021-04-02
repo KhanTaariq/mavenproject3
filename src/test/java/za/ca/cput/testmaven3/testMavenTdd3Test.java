@@ -12,8 +12,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * @Author: Sibusiso Makaula 
- * 217101887
+ * @Author: Sibusiso Makaula 217101887
  */
 public class testMavenTdd3Test {
 
@@ -30,12 +29,12 @@ public class testMavenTdd3Test {
 
     @Test
     public void testEquality() {
-        assertTrue(test1.equals(test1));
+        assertEquals(test2,test2);
     }
 
     @Test
     public void testIdentity() {
-        assertTrue(test1.equals(test2));
+        assertSame(test1,test2);
     }
 
     @Test
@@ -45,9 +44,9 @@ public class testMavenTdd3Test {
     }
 
     @Test
-    @Timeout(1000)
+    @Timeout(100)
     public void testTimeOut() throws Exception {
-        Thread.sleep(1000);
+        Thread.sleep(100);
         System.out.println("test passed with in the time");
 
     }
@@ -55,6 +54,9 @@ public class testMavenTdd3Test {
     @Test
     @Disabled("disable")
     public void testDisabled() {
-        assertEquals(3, 1+2);
+        assertEquals(3, 1 + 2);
+    }
+    public boolean setDfailINoTest(){
+        return false;
     }
 }
