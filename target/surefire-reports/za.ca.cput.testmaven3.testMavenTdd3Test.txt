@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: za.ca.cput.testmaven3.testMavenTdd3Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 1, Time elapsed: 5.064 s <<< FAILURE! - in za.ca.cput.testmaven3.testMavenTdd3Test
+testTimeOut  Time elapsed: 5.046 s  <<< ERROR!
+java.util.concurrent.TimeoutException: testTimeOut() timed out after 5 seconds
+
+testFailingTest  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Failed test deliberately
+	at za.ca.cput.testmaven3.testMavenTdd3Test.testFailingTest(testMavenTdd3Test.java:47)
+
