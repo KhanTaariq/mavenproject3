@@ -2,7 +2,7 @@ package za.ca.cput.testmaven3;
 
 
 /**
- *I modified the code that was reated by my leader
+ *I modified the code that was created by my leader
  * @author Taariq
  */
 public class testMavenTdd3 {
